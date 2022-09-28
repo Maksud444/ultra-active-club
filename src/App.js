@@ -7,6 +7,7 @@ function App() {
   return (
     <div className="App">
        <Header></Header>
+       <h2>Select today’s exercise</h2>
        <Student></Student>
     </div>
   );

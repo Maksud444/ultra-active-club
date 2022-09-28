@@ -1,7 +1,17 @@
 .student-container{
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 4fr 1fr;
+    margin: 0px;
+    padding: 10px;
 }
-.student-card{
-    margin: 30px;
+
+.singleStudent-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 45px;
+   margin: 30px;
+}
+.cart-container{
+    margin : 10px;
+    border: 1px solid gray;
 }
