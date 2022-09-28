@@ -23,6 +23,19 @@ const Student = () => {
             <div className='cart-container'>
                <div className='my-self'>
                 <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/b6a323722d2d61241769d14604e97b39-1618479898751/5f592006-a06a-42bf-bb0a-4bcd904e19c7.jpg" alt="" />
+                <h3>Maksud Billah</h3>
+               </div>
+               <div className='my-about'>
+               <div className='my-age'>
+               <h3>75 <span>kg</span></h3>
+                <h3>5.6</h3>
+                <h3>25 <span>yr</span></h3>
+               </div>
+               <div className='my-weight'>
+                    <p>Weight</p>
+                    <p>Height</p>
+                    <p>Age</p>
+                </div>
                </div>
             </div>
         </div>

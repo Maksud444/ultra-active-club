@@ -1,13 +1,14 @@
 .student{
-    width: 300px;
+    width: 250px;
     height: 540px;
     border: 1px solid gray;
     border-radius: 8px;
+    position: relative;
 }
 
 .student img{
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     border-radius: 8px;
     margin: 20px;
 }
@@ -18,15 +19,15 @@
     line-height: 25px;
     text-align: center;
 }
+
 .student-info{
-    margin: 14px;
-}
-.student-info p{
-    margin-bottom: 0;
+    margin: 10px;
 }
 .btn-cart{
     width: 100%;
     background-color: rgb(124, 90, 246);
     border: 0;
     border-radius: 0px 0px 8px 8px;
+    position: absolute;
+    bottom: 0;
 }
