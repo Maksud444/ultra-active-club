@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import Break from '../Break/Braek';
 import './Cart.css'
 import { addToDb, savedGymCart } from '../../Utilities/FakeDB';
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 
 const Cart = ({cart}) => {
     const [savedBreaktime, setSavedbreaktime]  = useState(0)
@@ -20,6 +22,10 @@ const Cart = ({cart}) => {
             setSavedbreaktime(key)
         }
     }, []);
+
+    const tostyMsg = ()=>{
+        toast("Wow Activity Completed!");
+    }
     return (
         <div>
             <div>
@@ -35,9 +41,10 @@ const Cart = ({cart}) => {
             </div>
             <p></p>
             <div >
-                <button className='button'>
+                <button onClick={tostyMsg} className='button'>
                     <p>Activity Completed</p>
                 </button>
+                <ToastContainer />
             </div>
         </div>
     );
