@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Break from '../Break/Braek';
 import './Cart.css'
+import { addToDb, savedGymCart } from '../../Utilities/FakeDB';
 
 const Cart = ({cart}) => {
     const [savedBreaktime, setSavedbreaktime]  = useState(0)
@@ -9,7 +10,7 @@ const Cart = ({cart}) => {
         total = total + product.time
     }
     const clickedBtn = (breakTime) => { 
-        // addToDb(breakTime.btn)
+        addToDb(breakTime.btn)
         setSavedbreaktime(breakTime.btn)
     }
 
