@@ -5,12 +5,17 @@ import './Student.css'
 
 const Student = () => {
     const [student,setStudent] = useState([]);
-
+    const [cart,setCart] = useState([]);
     useEffect(()=>{
         fetch('data.json')
         .then(res => res.json())
         .then(data => setStudent(data))
-    },[])
+    },[]);
+    const handleClick = (product)=>{
+        console.log(product)
+        const newCart = [...cart, product];
+        setCart(newCart);
+    }
     return (
         <div className='student-container'>
            <div className='singleStudent-container'>
@@ -18,6 +23,7 @@ const Student = () => {
             student.map(singleStudent => <SingleStudent
             key={singleStudent.id}
             singleStudent={singleStudent}
+            handleClick={handleClick}
             ></SingleStudent>)
           }
             </div> 
@@ -38,7 +44,7 @@ const Student = () => {
                     <p>Age</p>
                 </div>
                </div>
-               <Cart></Cart>
+               <Cart cart={cart}></Cart>
             </div>
             <div className='question'>
                 <h4>question 1: how does react works ?</h4>

@@ -1,7 +1,7 @@
 import React from 'react';
 import './Single-Student.css'
 
-const SingleStudent = ({singleStudent}) => {
+const SingleStudent = ({ singleStudent, handleClick }) => {
     const {picture,name,age,time} = singleStudent;
     return (
        <div className='student'>
@@ -14,7 +14,7 @@ const SingleStudent = ({singleStudent}) => {
         <p >For Age :{age}</p>
         <p>Time required : {time}m</p> 
        </div> 
-       <button className='btn-cart'>
+       <button onClick={()=> handleClick(singleStudent)} className='btn-cart'>
         <p>Add To Cart</p>
        </button>
        </div>
