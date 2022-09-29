@@ -14,6 +14,12 @@ const Cart = ({cart}) => {
         setSavedbreaktime(breakTime.btn)
     }
 
+    useEffect(() => {
+        const savedData = savedGymCart()
+        for (const key in savedData) {
+            setSavedbreaktime(key)
+        }
+    }, []);
     return (
         <div>
             <div>
