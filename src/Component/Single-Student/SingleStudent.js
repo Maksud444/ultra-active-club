@@ -12,7 +12,7 @@ const SingleStudent = ({singleStudent}) => {
          ullamco est sit aliqua dolor do 
         amet sint</p>
         <p >For Age :{age}</p>
-        <p>Time required : {time}</p> 
+        <p>Time required : {time}m</p> 
        </div> 
        <button className='btn-cart'>
         <p>Add To Cart</p>
