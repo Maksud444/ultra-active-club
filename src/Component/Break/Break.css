@@ -1,0 +1,14 @@
+.break-container{
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    background: #4eacff88;
+    border-radius: 5px;
+}
+.break-container button {
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        border: 2px solid #148ef9f9;
+        margin: 0 10px;
+}
