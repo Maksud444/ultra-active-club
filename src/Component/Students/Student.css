@@ -44,7 +44,10 @@
 }
 
 @media screen and (max-width:768px) {
-    .student-container {
+    .student-container{
+        display: block;
+    }
+    .singleStudent-container {
         display: block;
     }
 
