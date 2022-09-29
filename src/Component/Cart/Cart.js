@@ -23,7 +23,7 @@ const Cart = () => {
             <p></p>
             <div >
                 <button className='button'>
-                    <p>Complete</p>
+                    <p>Activity Completed</p>
                 </button>
             </div>
         </div>

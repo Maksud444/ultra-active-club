@@ -29,7 +29,7 @@
     color: white;
     border-radius: 15px;
     height: 60px;
-    text-align: center;
+   text-align: center;
 }
 
 .details {
@@ -37,6 +37,7 @@
     color: white;
     border-radius: 15px;
     height: 60px;
+    text-align: center;
 }
 
 .question {
@@ -44,4 +45,10 @@
     align-items: center;
     text-align: center;
     justify-content: center;
+}
+.btn-timer{
+    margin: 20px;
+    border-radius: 40px 40px 40px 40px;
+    gap: 5px;
+    background-color: azure;
 }
